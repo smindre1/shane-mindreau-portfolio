@@ -1,0 +1,131 @@
+:root {
+  --licor: #220901;
+  --salmon: #fa775b;
+  --poly-blue: #054a91;
+  --red: #941b0c;
+  --brown: #621708;
+  --green: #57b288;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: var(--poly-blue);
+}
+
+header {
+  background-color: var(--salmon);
+  width: 100%;
+  margin: 0%;
+  padding: 2% 0% 1% 0%;
+  align-items: end;
+}
+
+h1 {
+  font-size: 300%;
+  display: inline-block;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-top-right-radius: 10px 20%;
+  border-bottom-right-radius: 10px 20%;
+  background-color: var(--poly-blue);
+  color: var(--salmon);
+}
+
+header nav {
+  float: right;
+  font-size: 130%;
+  font-weight: bold;
+  padding-top: 1.5%;
+  padding-right: 2%;
+  color: var(--poly-blue);
+}
+
+/* Creates a gap between the header nav topics. */
+header nav a {
+  margin-right: 10px;
+}
+
+section {
+  color: var(--green);
+  display: flex;
+}
+
+h2 {
+  color: var(--salmon);
+  font-size: 250%;
+  padding-left: 15%;
+  padding-right: 2%;
+  text-align: right;
+  border-right: thick solid var(--salmon);
+}
+
+section section {
+  font-size: 100%;
+}
+
+aside {
+  width: 20vw;
+}
+
+article,
+aside {
+  display: inline-block;
+  margin: 2vw 2vw 2vw 0vw;
+}
+
+article {
+  flex: 3;
+}
+
+.projects {
+  flex-wrap: wrap;
+  flex: none;
+}
+
+#contacts-spacing {
+  margin: 0px 32px;
+  flex: auto;
+  color: var(--green);
+}
+
+#transparent {
+  color: transparent;
+}
+
+#contact-me-nav {
+  display: flex;
+  padding: 1% 20vw 1% 5vw;
+}
+
+.MenuBarTextColor {
+  color: var(--poly-blue);
+}
+
+.ProjectImages {
+  width: 30vw;
+  height: 20vw;
+  position: relative;
+}
+
+.thing {
+  position: absolute fixed;
+}
+
+figure {
+  background-image: url("project-image-placeholder.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* height: 200px;
+  width: 200px; */
+  display: inline-block;
+  padding: 150px 300px;
+  margin: 2vw;
+}
+/* 
+figure section {
+
+} */
