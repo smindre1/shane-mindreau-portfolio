@@ -14,6 +14,7 @@
 
 body {
   background-color: var(--poly-blue);
+  width: 100%;
 }
 
 header {
@@ -111,21 +112,39 @@ article {
   position: relative;
 }
 
-.thing {
+/* .thing {
   position: absolute fixed;
-}
+} */
 
-figure {
+.MainFigure {
+  /* height: 200px;
+  width: 200px; */
+  display: flex;
+  /* padding: 400px 0px 0px 30px; */
+  margin: 2vw;
   background-image: url("project-image-placeholder.png");
   background-size: contain;
   background-repeat: no-repeat;
-  /* height: 200px;
-  width: 200px; */
-  display: inline-block;
-  padding: 150px 300px;
-  margin: 2vw;
+  width: 150vw;
+  height: 21vw;
 }
-/* 
-figure section {
 
-} */
+.MainFigCaption {
+  padding-top: 16vw;
+  padding-left: 1vw;
+}
+
+figure {
+  display: flex;
+  margin: 2vw;
+  background-image: url("project-image-placeholder.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 70vw;
+  height: 50vw;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
