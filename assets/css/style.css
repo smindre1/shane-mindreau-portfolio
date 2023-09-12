@@ -22,14 +22,14 @@ header {
   width: 100%;
   margin: 0%;
   padding: 2% 0% 1% 0%;
-  align-items: end;
+  margin-bottom: 2vw;
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 4vw;
   display: inline-block;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 2vw;
+  padding-right: 5vw;
   border-top-right-radius: 10px 20%;
   border-bottom-right-radius: 10px 20%;
   background-color: var(--poly-blue);
@@ -51,14 +51,15 @@ header nav a {
 }
 
 section {
-  color: var(--green);
+  color: var(--salmon);
   display: flex;
+  margin-bottom: 5vh;
 }
 
 h2 {
   color: var(--salmon);
   font-size: 250%;
-  padding-left: 15%;
+  /* padding-left: 15%; */
   padding-right: 2%;
   text-align: right;
   border-right: thick solid var(--salmon);
@@ -68,18 +69,10 @@ section section {
   font-size: 100%;
 }
 
-aside {
-  width: 20vw;
-}
-
 article,
 aside {
   display: inline-block;
-  margin: 2vw 2vw 2vw 0vw;
-}
-
-article {
-  flex: 3;
+  margin: 0vw 2vw 0vw 0vw;
 }
 
 .projects {
@@ -88,63 +81,191 @@ article {
 }
 
 #contacts-spacing {
-  margin: 0px 32px;
-  flex: auto;
+  display: flex;
+  margin-right: 3vw;
+  /* margin-left: 2vw; */
   color: var(--green);
-}
-
-#transparent {
-  color: transparent;
+  align-items: center;
+  font-size: 3vh;
 }
 
 #contact-me-nav {
   display: flex;
-  padding: 1% 20vw 1% 5vw;
+  /* padding: 1% 20vw 1% 5vw; */
 }
 
 .MenuBarTextColor {
   color: var(--poly-blue);
 }
 
-.ProjectImages {
-  width: 30vw;
-  height: 20vw;
-  position: relative;
-}
-
-/* .thing {
-  position: absolute fixed;
-} */
-
-.MainFigure {
-  /* height: 200px;
-  width: 200px; */
-  display: flex;
-  /* padding: 400px 0px 0px 30px; */
-  margin: 2vw;
-  background-image: url("project-image-placeholder.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 150vw;
-  height: 21vw;
-}
-
-.MainFigCaption {
-  padding-top: 16vw;
-  padding-left: 1vw;
-}
-
-figure {
-  display: flex;
-  margin: 2vw;
-  background-image: url("project-image-placeholder.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 70vw;
-  height: 50vw;
-}
-
 div {
   display: flex;
   flex-wrap: wrap;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-basis: 25%;
+  justify-content: right;
+  /* align-items: center; */
+}
+
+.details {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: left;
+  /* align-items: center; */
+}
+
+.div {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 70%;
+  flex-shrink: 2;
+}
+
+.figure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.leftFigure {
+  margin-right: 2vw;
+}
+
+.figure img {
+  flex: 1 0 45%;
+  /* margin: 5px; */
+}
+
+.MainImg {
+  width: 50vw;
+  margin-right: 0vw;
+  /* position: absolute; */
+}
+
+img {
+  width: 24vw;
+  border: solid var(--salmon) 5px;
+  /* position: relative;
+  text-align: center; */
+  margin: 0vw 0vw 1vw 0vw;
+}
+
+.MainImgTextOverlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* align-items:center; */
+  justify-content: center;
+  margin: 4vw 4vw 4vw 0vw;
+  padding-left: 4vw;
+  padding-right: 1vw;
+  font-size: 1.5vw;
+  background-color: var(--salmon);
+  color: var(--brown);
+}
+
+.TextOverlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* align-items:center; */
+  justify-content: center;
+  margin: 3vw 2vw 3vw 0vw;
+  padding-left: 2vw;
+  padding-right: 1vw;
+  font-size: 1.25vw;
+  background-color: var(--salmon);
+  color: var(--brown);
+}
+
+.contacts {
+  flex-direction: row;
+}
+
+#profile {
+  width: 12vw;
+  border-radius: 10px;
+  display: flex;
+}
+
+#aboutMeArticle {
+  display: flex;
+}
+
+#p {
+  flex-direction: column;
+}
+
+#projectLink {
+  display: inline-block;
+}
+@media only screen and (max-width: 853px) {
+  .title {
+    font-size: 10px;
+  }
+  /* #contacts-spacing {
+    font-size: 10px;
+  } */
+}
+
+@media only screen and (max-width: 521px) {
+  .title {
+    font-size: 1.75vh;
+  }
+  /* #contacts-spacing {
+    font-size: 1.75vh;
+  } */
+}
+
+@media only screen and (max-width: 413px) {
+  .div {
+    flex-direction: column;
+  }
+  .title {
+    justify-content: center;
+  }
+  h2 {
+    border-right: 0;
+    border-bottom: thick solid var(--salmon);
+    padding: 0% 0% 5% 0%;
+  }
+  #aboutMeArticle {
+    justify-content: center;
+  }
+  article,
+  aside {
+    margin: 0vw 0vw 4vw 0vw;
+  }
+  .project-images {
+    justify-content: center;
+    margin: 0vw 15vw 0vw 15vw;
+  }
+
+  #contact-me-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+  #contacts-spacing {
+    justify-content: center;
+    margin-right: 0%;
+  }
+  #Contact-Me-Path {
+    padding: 0% 0% 2% 0%;
+  }
 }

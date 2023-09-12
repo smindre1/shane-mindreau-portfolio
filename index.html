@@ -21,88 +21,93 @@
       <!-- <img src="./assets/prop.jpg" alt="background theme" /> -->
     </header>
 
-    <section>
-      <aside>
-        <h2><a id="About-Me-Path">About Me</a></h2>
-      </aside>
-      <article>
-        <li>N/A</li>
-        <li>N/A</li>
-        <li>N/A</li>
-        <li>N/A</li>
-      </article>
+    <section class="section-container">
+      <div class="div">
+        <aside class="title">
+          <h2><a id="About-Me-Path">About Me</a></h2>
+        </aside>
+        <article id="aboutMeArticle">
+          <figure class="div">
+            <img class="leftFigure" id="profile" src="./assets/images/face-placeholder.jpg" alt="Profile Image">
+          </figure>
+          <div id="p">
+            <li>N/A</li>
+            <li>N/A</li>
+          </div>
+        </article>
+      </div>
+
     </section>
 
-    <section>
-      <aside>
-        <h2><a id="My-Work-Path">My Work</a></h2>
-      </aside>
+    <section class="section-container">
+      <div class="div">
+        <aside class="title">
+          <h2><a id="My-Work-Path">My Work</a></h2>
+        </aside>
 
-      <!-- Links to my future coding projects -->
-      <!-- <article class="projects"></article> -->
-      <!-- <img
-        class="ProjectImages"
-        src="./assets/project-image-placeholder.png"
-        alt="Project 1 Background"
-      /> -->
-      <div>
-        <figure class="MainFigure">
-          <figcaption class="MainFigCaption">
-            <h3 class="thing">Project Name 1:</h3>
-            <li class="thing">Code Languages Used</li>
-          </figcaption>
-        </figure>
-        <a link=""></a>
+        <div class="project-images">
+          <a href="https://smindre1.github.io/Project-One-Front-End-Dev/">
+            <figure class="figure">
+              <!-- <img class="MainImg" src="./assets/images/project-image-placeholder.png" alt="Project 1 Background" /> -->
+              <img class="MainImg" src="./assets/images/Song-Finder-Stock-Image.png" alt="Project 1 Background" />
+                <figcaption class="MainImgTextOverlay">
+                  <h3 class="thing">Project 1: Song Finder</h3>
+                  <li class="thing">Code Used: HTML, CSS, & JS</li>
+                </figcaption>
+            </figure>
+          </a>
 
-        <!-- <img src="" alt="Project 2 Background" />
-        <a link=""></a> -->
+          <a href="https://github.com/smindre1/pacey">
+            <figure class="figure">
+              <img class="leftFigure" href="https://github.com/smindre1/pacey" src="./assets/images/project-image-placeholder.png" alt="Project 2 Background">
+                <figcaption class="TextOverlay">
+                  <h3>Project Name 2:</h3>
+                  <li>Code Languages Used</li>
+                </figcaption>
+              </img>
+            </figure>
+          </a>
 
-        <figure>
-          <figcaption>
-            <h3>Project Name 2:</h3>
-            <li>Code Languages Used</li>
-          </figcaption>
-        </figure>
+          <a href="https://github.com/smindre1/pacey">
+            <figure class="figure">
+              <img src="./assets/images/project-image-placeholder.png" alt="Project 3 Background" />
+              <figcaption class="TextOverlay">
+                <h3>Project Name 3:</h3>
+                <li>Code Languages Used</li>
+              </figcaption>
+            </figure>
+          </a>
 
-        <!-- <img src="" alt="Project 3 Background" />
-        <a link=""></a> -->
+          <a href="https://github.com/smindre1/pacey">
+            <figure class="figure">
+              <img class="leftFigure" src="./assets/images/project-image-placeholder.png" alt="Project 4 Background" />
+              <figcaaption class="TextOverlay">
+                <h3>Project Name 4:</h3>
+                <li>Code Languages Used</li>
+              </figcaption>
+            </figure>
+          </a>
 
-        <figure>
-          <figcaption>
-            <h3>Project Name 3:</h3>
-            <li>Code Languages Used</li>
-          </figcaption>
-        </figure>
-
-        <!-- <img src="" alt="Project 4 Background" />
-        <a link=""></a> -->
-      
-        <figure>
-          <figcaaption>
-            <h3>Project Name 4:</h3>
-            <li>Code Languages Used</li>
-          </figcaption>
-        </figure>
-
-
-        <!-- <img src="" alt="Project 5 Background" />
-        <a link=""></a> -->
-
-        <figure>
-          <figcaption>
-            <h3>Project Name 5:</h3>
-            <li>Code Languages Used</li>
-          </figcaption> 
-        </figure>
+          <a href="https://github.com/smindre1/pacey">
+            <figure class="figure">
+              <img src="./assets/images/project-image-placeholder.png" alt="Project 5 Background" />
+              <figcaption class="TextOverlay">
+                <h3>Project Name 5:</h3>
+                <li>Code Languages Used</li>
+              </figcaption> 
+            </figure>
+          </a>
+        </div>
       </div>
     </section>
+
     <!-- ----------------- -->
 
-    <section>
-      <aside>
+    <section class="section-container contacts">
+      <aside class="title">
         <h2 id="Contact-Me-Path">Contact Me</h2>
       </aside>
-      <article id="contacts-vertical-centering">
+      <article>
         <nav id="contact-me-nav">
           <a href="tel:555-555-5555" id="contacts-spacing">555•555•5555</a>
           <a href="mailto:shane.mindreau@gmail.com" id="contacts-spacing"
@@ -119,8 +124,6 @@
             >Linkden</a
           >
         </nav>
-        <!-- this is here simply to have the nav content align with the top of the h2. -->
-        <!-- <li id="transparent">.............</li> -->
       </article>
     </section>
   </body>
