@@ -1,18 +1,12 @@
-# <Shane Mindreau Portfolio Program>
+# Shane Mindreau's Portfolio
 
 ## Description
 
-This project is meant to serve as a portfolio to showcase my skills and talents to employers.
-
-My thought process for this project was to introduce myself, present a few of my projects to browse, and providing links to my contact information and personal Github.
+This project is meant to serve as a portfolio to showcase my skills and talents to employers. Through this project I wish to introduce myself, present a few of my projects to browse, and provide links to my contact information and personal GitHub Repositories.
 
 ## Usage
 
-screenshots...
-![alt text](./assets/images/screenshot.png)
-design/screen compatability
-
-https://smindre1.github.io/shane-mindreau-portfolio/
+**[`Deployed Portfolio`](https://smindre1.github.io/shane-mindreau-portfolio/)**
 
 ## Credits
 
