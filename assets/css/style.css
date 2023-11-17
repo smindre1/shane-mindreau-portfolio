@@ -5,6 +5,7 @@
   --red: #941b0c;
   --brown: #621708;
   --green: #57b288;
+  --dark-blue: #002347;
 }
 
 * {
@@ -32,7 +33,7 @@ h1 {
   padding-right: 5vw;
   border-top-right-radius: 10px 20%;
   border-bottom-right-radius: 10px 20%;
-  background-color: var(--poly-blue);
+  background-color: var(--dark-blue);
   color: var(--salmon);
 }
 
@@ -58,9 +59,9 @@ section {
 
 h2 {
   color: var(--salmon);
-  font-size: 250%;
+  font-size: 2.5vw;
   /* padding-left: 15%; */
-  padding-right: 2%;
+  padding-right: 15px;
   text-align: right;
   border-right: thick solid var(--salmon);
 }
@@ -85,13 +86,16 @@ aside {
   margin-right: 3vw;
   /* margin-left: 2vw; */
   color: var(--green);
-  align-items: center;
-  font-size: 3vh;
+  font-size: 1.25vw;
 }
 
 #contact-me-nav {
   display: flex;
   /* padding: 1% 20vw 1% 5vw; */
+  flex-basis: 50%;
+  margin: 0 2% 0 2%;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .MenuBarTextColor {
@@ -133,6 +137,7 @@ div {
   flex-wrap: wrap;
   flex-basis: 70%;
   flex-shrink: 2;
+  margin-left: 2vw;
 }
 
 .figure {
@@ -195,12 +200,14 @@ img {
 
 .contacts {
   flex-direction: row;
+  padding: 0 0 80px 0;
 }
 
 #profile {
   width: 12vw;
   border-radius: 10px;
   display: flex;
+  margin-left: 2vw;
 }
 
 #aboutMeArticle {
@@ -216,17 +223,20 @@ img {
 }
 @media only screen and (max-width: 853px) {
   .title {
-    font-size: 10px;
+    font-size: 20px;
   }
   /* #contacts-spacing {
     font-size: 10px;
   } */
+  .contacts {
+    padding: 0 0 30px 0;
+  }
 }
 
 @media only screen and (max-width: 521px) {
-  .title {
+  /* .title {
     font-size: 1.75vh;
-  }
+  } */
   /* #contacts-spacing {
     font-size: 1.75vh;
   } */
