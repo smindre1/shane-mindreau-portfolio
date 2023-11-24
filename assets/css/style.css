@@ -54,7 +54,7 @@ header nav a {
 section {
   color: var(--salmon);
   display: flex;
-  margin-bottom: 5vh;
+  
 }
 
 h2 {
@@ -104,12 +104,8 @@ aside {
 
 div {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.section-container {
-  display: flex;
-  flex-direction: column;
+  /* flex-wrap: wrap; */
+  margin-bottom: 5vh;
   width: 100%;
 }
 
@@ -127,7 +123,7 @@ div {
   /* align-items: center; */
 }
 
-.div {
+.container {
   display: flex;
   flex-direction: row;
 }
@@ -199,8 +195,11 @@ img {
 }
 
 .contacts {
+  display: flex;
   flex-direction: row;
   padding: 0 0 80px 0;
+  /* overwrites the div element css margins */
+  margin: 0 0 0 0;
 }
 
 #profile {
@@ -214,8 +213,10 @@ img {
   display: flex;
 }
 
-#p {
+.text {
   flex-direction: column;
+  font-size: 1.25vw;
+  color: var(--salmon);
 }
 
 #projectLink {
@@ -243,8 +244,9 @@ img {
 }
 
 @media only screen and (max-width: 413px) {
-  .div {
+  .container {
     flex-direction: column;
+    align-items: center;
   }
   .title {
     justify-content: center;
@@ -252,7 +254,8 @@ img {
   h2 {
     border-right: 0;
     border-bottom: thick solid var(--salmon);
-    padding: 0% 0% 5% 0%;
+    padding: 0 0 5% 0;
+    margin: 0 0 10px 0;
   }
   #aboutMeArticle {
     justify-content: center;
@@ -264,12 +267,14 @@ img {
   .project-images {
     justify-content: center;
     margin: 0vw 15vw 0vw 15vw;
+    width: 50%;
   }
 
   #contact-me-nav {
     flex-wrap: wrap;
     justify-content: center;
     justify-content: space-evenly;
+    width: 70%;
   }
   #contacts-spacing {
     justify-content: center;
@@ -277,5 +282,8 @@ img {
   }
   #Contact-Me-Path {
     padding: 0% 0% 2% 0%;
+  }
+  .text{
+    width: auto;
   }
 }
