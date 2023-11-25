@@ -15,15 +15,18 @@
 
 body {
   background-color: var(--poly-blue);
+  background-image: url(/assets/images/Portfolio_Background_Image.png),
+    linear-gradient(to right, var(--poly-blue), var(--dark-blue), var(--dark-blue), var(--dark-blue), var(--poly-blue));
+  background-repeat: repeat-x, repeat;
   width: 100%;
+  height: 100%;
 }
 
 header {
   background-color: var(--salmon);
   width: 100%;
-  margin: 0%;
-  padding: 2% 0% 1% 0%;
-  margin-bottom: 2vw;
+  margin: 0 0 2vw 0;
+  padding: 2% 0 1% 0;
 }
 
 h1 {
@@ -48,13 +51,12 @@ header nav {
 
 /* Creates a gap between the header nav topics. */
 header nav a {
-  margin-right: 10px;
+  margin: 0 10px 0 0;
 }
 
 section {
   color: var(--salmon);
   display: flex;
-  
 }
 
 h2 {
@@ -73,7 +75,7 @@ section section {
 article,
 aside {
   display: inline-block;
-  margin: 0vw 2vw 0vw 0vw;
+  margin: 0 2vw 0 0;
 }
 
 .projects {
@@ -83,8 +85,7 @@ aside {
 
 #contacts-spacing {
   display: flex;
-  margin-right: 3vw;
-  /* margin-left: 2vw; */
+  margin: 0 3vw 0 0;
   color: var(--green);
   font-size: 1.25vw;
 }
@@ -105,7 +106,7 @@ aside {
 div {
   display: flex;
   /* flex-wrap: wrap; */
-  margin-bottom: 5vh;
+  margin: 0 0 5vh 0;
   width: 100%;
 }
 
@@ -133,7 +134,7 @@ div {
   flex-wrap: wrap;
   flex-basis: 70%;
   flex-shrink: 2;
-  margin-left: 2vw;
+  margin: 0 0 0 2vw;
 }
 
 .figure {
@@ -149,30 +150,25 @@ div {
 
 .figure img {
   flex: 1 0 45%;
-  /* margin: 5px; */
 }
 
 .MainImg {
   width: 50vw;
-  margin-right: 0vw;
-  /* position: absolute; */
+  margin: 0 0 1vw 0;
 }
 
 img {
   width: 24vw;
   border: solid var(--salmon) 5px;
-  /* position: relative;
-  text-align: center; */
-  margin: 0vw 0vw 1vw 0vw;
+  margin: 0 0 1vw 0;
 }
 
 .MainImgTextOverlay {
   position: absolute;
   display: flex;
   flex-direction: column;
-  /* align-items:center; */
   justify-content: center;
-  margin: 4vw 4vw 4vw 0vw;
+  margin: 4vw 4vw 4vw 0;
   padding-left: 4vw;
   padding-right: 1vw;
   font-size: 1.5vw;
@@ -186,7 +182,7 @@ img {
   flex-direction: column;
   /* align-items:center; */
   justify-content: center;
-  margin: 3vw 2vw 3vw 0vw;
+  margin: 3vw 2vw 3vw 0;
   padding-left: 2vw;
   padding-right: 1vw;
   font-size: 1.25vw;
@@ -206,7 +202,7 @@ img {
   width: 12vw;
   border-radius: 10px;
   display: flex;
-  margin-left: 2vw;
+  margin: 0 2vw 0 2vw;
 }
 
 #aboutMeArticle {
@@ -262,11 +258,11 @@ img {
   }
   article,
   aside {
-    margin: 0vw 0vw 4vw 0vw;
+    margin: 0 0 4vw 0;
   }
   .project-images {
     justify-content: center;
-    margin: 0vw 15vw 0vw 15vw;
+    margin: 0 15vw 0 15vw;
     width: 50%;
   }
 
@@ -278,12 +274,12 @@ img {
   }
   #contacts-spacing {
     justify-content: center;
-    margin-right: 0%;
+    margin: 0 0 0 0;
   }
   #Contact-Me-Path {
-    padding: 0% 0% 2% 0%;
+    padding: 0 0 2% 0;
   }
-  .text{
+  .text {
     width: auto;
   }
 }
