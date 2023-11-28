@@ -15,7 +15,7 @@
 
 body {
   background-color: var(--poly-blue);
-  background-image: url(/assets/images/Portfolio_Background_Image.png),
+  background-image: url(../images/Portfolio_Background_Image.png),
     linear-gradient(to right, var(--poly-blue), var(--dark-blue), var(--dark-blue), var(--dark-blue), var(--poly-blue));
   /* The first argument is for the background image, the second is for the color gradient */
   background-repeat: repeat-x, repeat;
@@ -134,9 +134,10 @@ div {
 .project-images {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 70%;
+  flex-basis: 50%;
   flex-shrink: 2;
   margin: 0 0 0 2vw;
+  justify-content: space-between;
 }
 
 .figure {
@@ -144,6 +145,7 @@ div {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-end;
+  margin: 0 0 1vw 0;
 }
 
 .leftFigure {
@@ -156,13 +158,23 @@ div {
 
 .MainImg {
   width: 50vw;
-  margin: 0 0 1vw 0;
 }
 
 img {
   width: 24vw;
   border: solid var(--salmon) 5px;
-  margin: 0 0 1vw 0;
+}
+
+.greyOverlay {
+  background-color: var(--dark-blue);
+}
+
+.opacityFilter {
+  opacity: 0.5;
+}
+
+figure:hover img{
+  opacity: 1;
 }
 
 .MainImgTextOverlay {
@@ -220,8 +232,9 @@ img {
 #projectLink {
   display: inline-block;
 }
+
 @media only screen and (max-width: 853px) {
-  body{
+  body {
     background-size: 80%, contain;
   }
   .title {
@@ -236,7 +249,7 @@ img {
 }
 
 @media only screen and (max-width: 521px) {
-  body{
+  body {
     background-size: 100%, contain;
   }
   /* .title {
@@ -248,7 +261,7 @@ img {
 }
 
 @media only screen and (max-width: 413px) {
-  body{
+  body {
     background-size: 120%, contain;
   }
   .container {
