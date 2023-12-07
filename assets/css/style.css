@@ -22,15 +22,26 @@ body {
   background-size: 60%, contain;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 header {
   background-color: var(--salmon);
   width: 100%;
-  margin: 0 0 2vw 0;
+  margin: 0 0 5vw 0;
   padding: 2% 0 1% 0;
   border-bottom: solid 10px;
   border-color: var(--brown);
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transform: rotate(90deg);
+  left: 0;
+  /* bottom: 0; */
+  justify-content: center;
 }
 
 h1 {
@@ -44,13 +55,10 @@ h1 {
   color: var(--salmon);
 }
 
-header nav {
+.menu {
   float: right;
-  font-size: 18px;
-  font-weight: bold;
   padding-top: 1.5%;
   padding-right: 2%;
-  color: var(--poly-blue);
 }
 
 /* Creates a gap between the header nav topics. */
@@ -87,7 +95,7 @@ aside {
   flex: none;
 }
 
-#contacts-spacing {
+.contacts-spacing {
   display: flex;
   margin: 0 3vw 0 0;
   color: var(--green);
@@ -103,14 +111,20 @@ aside {
   align-items: center;
 }
 
-.MenuBarTextColor {
-  color: var(--poly-blue);
+.menuBarText {
+  color: var(--dark-blue);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.menuBarText:hover {
+  color: var(--brown);
 }
 
 div {
   display: flex;
   /* flex-wrap: wrap; */
-  margin: 0 0 5vh 0;
+  margin: 0 0 5vw 0;
   width: 100%;
 }
 
@@ -235,6 +249,22 @@ figure:hover img {
   display: inline-block;
 }
 
+button:hover {
+  opacity: 1;
+  font-size: 20px;
+  padding: 14px 0 13px 0;
+}
+
+.portfolioBtn {
+  width: 100%;
+  padding: 15px 0 15px 0;
+  background-color: var(--salmon);
+  color: var(--brown);
+  font-size: 18px;
+  font-weight: 900;
+  opacity: 0.75;
+}
+
 @media only screen and (max-width: 853px) {
   body {
     background-size: 80%, contain;
@@ -242,22 +272,28 @@ figure:hover img {
   .title {
     font-size: 20px;
   }
-  /* #contacts-spacing {
+  /* .contacts-spacing {
     font-size: 10px;
   } */
   .contacts {
     padding: 0 0 30px 0;
   }
+  .menuBarText {
+    font-size: 14px;
+  }
 }
 
-@media only screen and (max-width: 521px) {
+@media only screen and (max-width: 560px) {
   body {
     background-size: 100%, contain;
+  }
+  .menuBarText {
+    display: none;
   }
   /* .title {
     font-size: 1.75vh;
   } */
-  /* #contacts-spacing {
+  /* .contacts-spacing {
     font-size: 1.75vh;
   } */
 }
@@ -298,7 +334,7 @@ figure:hover img {
     justify-content: space-evenly;
     width: 70%;
   }
-  #contacts-spacing {
+  .contacts-spacing {
     justify-content: center;
     margin: 0 0 0 0;
   }

@@ -10,17 +10,19 @@
   <body>
     <header>
       <h1>Shane Mindreau</h1>
-      <nav>
-        <a href="#About-Me-Path" class="MenuBarTextColor">About Me</a>
-        <a href="#My-Work-Path" class="MenuBarTextColor">My Work</a>
-        <a href="#Contact-Me-Path" class="MenuBarTextColor">Contact Me</a>
+      <nav class="menu">
+        <a href="#About-Me-Path" class="menuBarText">About Me</a>
+        <a href="#My-Work-Path" class="menuBarText">My Work</a>
+        <a href="#Contact-Me-Path" class="menuBarText">Contact Me</a>
         <!-- I have yet to make a Resume webpage so it is not linked -->
-        <a href="#Contact-Me-Path" class="MenuBarTextColor">Resume</a>
+        <a href="#Contact-Me-Path" class="menuBarText">Resume</a>
       </nav>
-      <!-- add image -->
-      <!-- <img src="./assets/prop.jpg" alt="background theme" /> -->
     </header>
-
+    <!-- <div class="background">
+      <ul>
+        <li>1010101010010101010101010101010000010000000000110111111101010101011111</li>
+      </ul>
+    </div> -->
 
     <div class="container">
       <h2 class="title"><a id="About-Me-Path">About Me</a></h2>
@@ -29,8 +31,8 @@
           <img class="leftFigure" id="profile" src="./assets/images/face-placeholder.jpg" alt="Profile Image">
         </figure>
         <div class="text">
-          <li>N/A</li>
-          <li>N/A</li>
+          <p>N/A</p>
+          <p>N/A</p>
         </div>
       </article>
     </div>
@@ -44,8 +46,8 @@
           <figure class="figure greyOverlay">
             <img class="MainImg opacityFilter" src="./assets/images/song-finder-custom-image.png" alt="Project 1 Background" />
               <figcaption class="MainImgTextOverlay">
-                <h3 class="thing">Song Finder</h3>
-                <li class="thing">Code Used: HTML, CSS, & JS</li>
+                <h3>Song Finder</h3>
+                <p>Code Used: HTML, CSS, & JS</p>
               </figcaption>
           </figure>
         </a>
@@ -55,7 +57,7 @@
             <img class="opacityFilter" href="https://github.com/smindre1/pacey" src="./assets/images/Present-List-Custom-Image.png" alt="Project 2 Background">
               <figcaption class="TextOverlay">
                 <h3>Present List</h3>
-                <li>Code Used: HTML, CSS, JS, SQL</li>
+                <p>Code Used: HTML, CSS, JS, SQL</p>
               </figcaption>
             </img>
           </figure>
@@ -66,7 +68,7 @@
             <img class="opacityFilter" src="./assets/images/project-image-placeholder.png" alt="Project 3 Background" />
             <figcaption class="TextOverlay">
               <h3>Project Name 3:</h3>
-              <li>Code Languages Used</li>
+              <ul>Code Languages Used</ul>
             </figcaption>
           </figure>
         </a>
@@ -76,7 +78,7 @@
             <img class="opacityFilter" src="./assets/images/project-image-placeholder.png" alt="Project 4 Background" />
             <figcaaption class="TextOverlay">
               <h3>Project Name 4:</h3>
-              <li>Code Languages Used</li>
+              <ul>Code Languages Used</ul>
             </figcaption>
           </figure>
         </a>
@@ -86,11 +88,14 @@
             <img class="opacityFilter" src="./assets/images/project-image-placeholder.png" alt="Project 5 Background" />
             <figcaption class="TextOverlay">
               <h3>Project Name 5:</h3>
-              <li>Code Languages Used</li>
+              <ul>Code Languages Used</ul>
             </figcaption> 
           </figure>
         </a>
+        
+        <button class="portfolioBtn" id="additionalProjects" >More Of My Work Here!</button>
       </div>
+      
     </div>
 
 
@@ -99,20 +104,21 @@
     <div class="container contacts">
       <h2 id="Contact-Me-Path" class="title">Contact Me</h2>
       <nav id="contact-me-nav">
-        <a href="tel:646-526-4839" id="contacts-spacing">646•526•4839</a>
-        <a href="mailto:shane.mindreau@gmail.com" id="contacts-spacing"
+        <a href="tel:646-526-4839" class="contacts-spacing">646•526•4839</a>
+        <a href="mailto:shane.mindreau@gmail.com" class="contacts-spacing"
           >shane.mindreau@gmail.com</a>
         <a
           href="https://github.com/smindre1?tab=repositories"
-          id="contacts-spacing"
+          class="contacts-spacing"
           >GitHub
         </a>
         <a
           href="https://www.linkedin.com/in/shane-mindreau-458219236?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFvAWpoCaRK%2Bpn8NrPy5O5g%3D%3D"
-          id="contacts-spacing"
+          class="contacts-spacing"
           >Linkden
         </a>
       </nav>
     </div>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
